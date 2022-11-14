@@ -2,6 +2,8 @@ Hello Coding Ninjas this is my submission for the task given.
 
 Small Note in the Flipkrt program the link of flipkart reviews page for page number 1 does not contain "&page=" therefore to run the program correctly and store all reveiews in output.csv file the user needs to input the link of the second page of the reveiews page on flipkart for any product .
 
+I have also added two of my failed attempts for the flipkart review scrapper as i put a lot of time into them :)
+
 My Experience:
 
 I have never in my life spent so much time coding.  i spent majority of my day on saturday and sunday trying to do the flipkart scrapper code.
