@@ -7,20 +7,20 @@ link=input('Paste the link of the second page of Reviews page here:\n')
 page=link[-1:]
 page=int(page)
 for i in range(page-1,125):
-    l=link.rstrip('2')
+    new_link=link.rstrip('2')
     i=str(i)
-    final=l+i
-    print(final)
-    page=requests.get(final)
+    output_link=new_link+i
+    print(output_link)
+    page=requests.get(output_link)
     page.content
     soup=BeautifulSoup(page.content,'html.parser')
-    review2=[]
+    new_rev=[]
     for j in soup.find_all('div',class_="_6t1WkM _3HqJxg"):
-        review2.append(j.text.split("."))
+        new_rev.append(j.text.split("."))
     
-    data1={"reviews":review2[0]}
+    stored = {"reviews":new_rev[0]}
     
-    data=pd.DataFrame(data=data1)
-    data.to_csv('output.csv', mode='a', index=False, header=False)
+    data=pd.DataFrame(data=stored)
+    data.to_csv('Finalreviews.csv', mode='a', index=False, header=False)
 
     print(data)
