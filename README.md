@@ -56,6 +56,7 @@ Contributions are welcome! Please follow the Contribution Guidelines for details
 
 License
 This project is licensed under the MIT License - see the LICENSE.txt file for details.
+- [License](#license)
 
 Code of Conduct
 Please review our Code of Conduct before contributing to the project.
